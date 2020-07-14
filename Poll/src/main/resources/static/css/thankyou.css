@@ -1,0 +1,21 @@
+/*
+Created on 10/07/2020 at 13:45:25 GMT+2
+*/
+
+body {
+    margin: 0px;
+    background-image: url("../images/ivoted.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2.5%;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+

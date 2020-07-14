@@ -1,0 +1,20 @@
+/*
+Created on 09/07/2020 at 17:09:51 GMT+2
+*/
+
+table {
+    text-align: center; 
+}
+
+td, th {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#votingTable {
+    margin-top: 2.5%;
+}
+

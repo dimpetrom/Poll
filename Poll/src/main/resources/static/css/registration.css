@@ -1,0 +1,29 @@
+/*
+Created on 02/07/2020 at 15:38:05 GMT+2
+*/
+
+body {
+    background-image: url("../images/registration.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#myform {
+    margin-top: 5%; 
+    margin-left: 14%;
+}
+
+.form-control, .input-xlarge {
+    width: 20%;
+
+}
+
+.control-label {
+    margin-top: 1%;
+}
+
+#rgsbutton {
+    width: 20%;
+}

@@ -1,0 +1,49 @@
+CREATE DATABASE IF NOT EXISTS `poll` ;
+
+USE `poll`;
+
+DROP TABLE IF EXISTS `role`;
+
+CREATE TABLE `role` (
+  `ROLEID` int(20) NOT NULL AUTO_INCREMENT,
+  `ROLENAME` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`ROLEID`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+/*Data for the table `role` */
+
+insert  into `role`(`ROLEID`,`ROLENAME`) values (1,'Voter'),(2,'Candidate'),(3, 'Admin');
+
+/*Table structure for table `user` */
+
+DROP TABLE IF EXISTS `user`;
+
+CREATE TABLE `user` (
+  `USERID` int(10) NOT NULL AUTO_INCREMENT,
+  `USERFIRSTNAME` varchar(40) DEFAULT NULL,
+  `USERLASTNAME` varchar(40) DEFAULT NULL,
+  `USERNAME` varchar(40) UNIQUE DEFAULT NULL,
+  `USERPASSWORD` varchar(60) DEFAULT NULL,
+  `ROLEID` int(10) DEFAULT NULL,
+  PRIMARY KEY (`USERID`),
+  KEY `FK_role` (`ROLEID`),
+  CONSTRAINT `FK_role` FOREIGN KEY (`ROLEID`) REFERENCES `role` (`ROLEID`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+insert into `user` values (1, 'Dimitris', 'Petromichelakis', 'admin', 'qwerty', 3);
+
+DROP TABLE IF EXISTS `vote`;
+
+CREATE TABLE `vote` (
+  `VOTEID` int(10) NOT NULL AUTO_INCREMENT,
+  `VOTERID` int(10) UNIQUE DEFAULT NULL,
+  `CANDIDATEID` int(10) DEFAULT NULL,
+  `RATING` int(5) DEFAULT NULL,
+  `DATETIME` datetime DEFAULT NULL,
+  PRIMARY KEY (`VOTEID`),
+  KEY `FK_vote` (`CANDIDATEID`),
+  KEY `FK_vote1` (`VOTERID`),
+  CONSTRAINT `FK_vote` FOREIGN KEY (`CANDIDATEID`) REFERENCES `user` (`USERID`),
+  CONSTRAINT `FK_vote1` FOREIGN KEY (`VOTERID`) REFERENCES `user` (`USERID`)
+) ;
+

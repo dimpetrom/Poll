@@ -1,0 +1,35 @@
+/*
+Created on 09/07/2020 at 13:55:21 GMT+2
+*/
+
+body {
+    background-image: url("../images/votingpage.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#votingTable {
+    margin-top: 2.5%;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+#votebtn {
+    float: right;
+}
+
+h3 {
+    text-align: center;
+}
+
+td {
+    padding-top: auto;
+    padding-bottom: auto;
+    vertical-align: middle;
+    display: table-cell;
+}

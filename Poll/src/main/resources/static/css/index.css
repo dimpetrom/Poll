@@ -1,0 +1,61 @@
+/*
+Created on 08/07/2020 at 15:39:49 GMT+2
+*/
+
+body {
+    margin: 0px 0px 0px 0px ;
+    background-image: url("../images/home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#labels {
+    color: white;
+}
+
+#myform {
+    margin-top: 0.7%;
+}
+
+.registration {
+    text-decoration: none;
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: white;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    color: red;
+}
+
+#loginbtn{
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 3px;
+    padding-top: 2px;
+    width: 75px;
+}
+
+#loginbtn:hover {
+    background-color: background;
+}
+
