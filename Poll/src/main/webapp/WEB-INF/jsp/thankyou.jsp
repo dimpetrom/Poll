@@ -20,7 +20,7 @@
             <c:when test="${userRole=='1'}">
             </c:when>  
             <c:when test="${userRole=='2'}">
-                <h2>Click <a href="myvotes">here</a> to see your votes</h2> 
+                <h2>Click <a class="here" href="myvotes">here</a> to see your votes</h2> 
             </c:when>
             <c:otherwise>
                 <h2>Admin</h2> 
