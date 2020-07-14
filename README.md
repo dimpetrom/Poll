@@ -1,0 +1,2 @@
+# Poll
+Simple Voting Page
